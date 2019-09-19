@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.659 sec <<< FAILURE! - in TestSuite
+testCurrentWeatherWithPostCode(api.TestCurrentWeather)  Time elapsed: 1.529 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at api.TestCurrentWeather.testCurrentWeatherWithPostCode(TestCurrentWeather.java:28)
+
+testCurrentWeatherWithPostCode(api.TestCurrentWeather)  Time elapsed: 1.537 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at api.TestCurrentWeather.testCurrentWeatherWithPostCode(TestCurrentWeather.java:28)
+

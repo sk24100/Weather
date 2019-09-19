@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [API Testing]" parallel="tests">
+  <test thread-count="1" verbose="0" name="Thread-1(failed)" parallel="tests">
+    <classes>
+      <class name="api.TestCurrentWeather">
+        <methods>
+          <include name="testCurrentWeatherWithPostCode" invocation-numbers="0 1"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- api.TestCurrentWeather -->
+    </classes>
+  </test> <!-- Thread-1(failed) -->
+</suite> <!-- Failed suite [API Testing] -->
