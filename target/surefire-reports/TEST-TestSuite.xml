@@ -1,104 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.659" tests="3" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="265.959" tests="22" errors="0" skipped="4" failures="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.201-b09"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="user.country.format" value="SE"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/avigorka/eclipse-workspace/api"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ritik\git\Saurabh-QloyalCodeTest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.country" value="IN"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/avigorka/eclipse-workspace/api"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/j6/zj2mqv8x2t35r9d9rg0gf3_04vy4_k/T/"/>
+    <property name="user.dir" value="C:\Users\ritik\git\Saurabh-QloyalCodeTest"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ritik\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/avigorka/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1370251388143218202.tmp"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/avigorka/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_211\\bin;C:\Program Files\Java\jdk1.8.0_211\\lib;C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\\bin;C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\nodejs\;C:\Users\ritik\AppData\Local\Microsoft\WindowsApps;C:\Users\ritik\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14.6"/>
-    <property name="user.home" value="/Users/avigorka"/>
-    <property name="user.timezone" value="Asia/Kolkata"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\ritik"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="avigorka"/>
-    <property name="java.class.path" value="/Users/avigorka/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ritik"/>
+    <property name="java.class.path" value="C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="/Users/avigorka/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/avigorka/eclipse-workspace/api/EMBEDDED"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="C:\Users\ritik\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\.."/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCurrentWeatherWithLatAndLon" classname="api.TestCurrentWeather" time="3.167"/>
-  <testcase name="testCurrentWeatherWithPostCode" classname="api.TestCurrentWeather" time="1.529">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+  <testcase name="testCurrentWeatherWithInvalidKey" classname="com.wheather.qa.api.TestCurrentWeather" time="5.561"/>
+  <testcase name="testCurrentWeatherWithInvalidPostalCode" classname="com.wheather.qa.api.TestCurrentWeather" time="1.906">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; doesn&apos;t match actual status code &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
-Expected status code <400> but was <200>.
+Expected status code <400> doesn't match actual status code <200>.
 
-	at api.TestCurrentWeather.testCurrentWeatherWithPostCode(TestCurrentWeather.java:28)
+	at com.wheather.qa.api.TestCurrentWeather.testCurrentWeatherWithInvalidPostalCode(TestCurrentWeather.java:53)
 ]]></failure>
     <system-out><![CDATA[Request method:	GET
-Request URI:	https://api.weatherbit.io/v2.0/current?postal_code=SE167BL&key=f798d5303d9c444ba0a776785af0f8de
+Request URI:	https://api.weatherbit.io/v2.0/current?postal_code=-60173&key=f798d5303d9c444ba0a776785af0f8de
 Proxy:			<none>
 Request params:	<none>
-Query params:	postal_code=SE167BL
+Query params:	postal_code=-60173
 				key=f798d5303d9c444ba0a776785af0f8de
 Form params:	<none>
 Path params:	<none>
+Multiparts:		<none>
 Headers:		Accept=*/*
 Cookies:		<none>
-Multiparts:		<none>
 Body:			<none>
 ]]></system-out>
   </testcase>
-  <testcase name="testCurrentWeatherWithPostCode" classname="api.TestCurrentWeather" time="1.537">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <400> but was <200>.
-
-	at api.TestCurrentWeather.testCurrentWeatherWithPostCode(TestCurrentWeather.java:28)
-]]></failure>
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://api.weatherbit.io/v2.0/current?postal_code=110085&key=f798d5303d9c444ba0a776785af0f8de
-Proxy:			<none>
-Request params:	<none>
-Query params:	postal_code=110085
-				key=f798d5303d9c444ba0a776785af0f8de
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-]]></system-out>
+  <testcase name="testCurrentWeatherWithLatAndLon" classname="com.wheather.qa.api.TestCurrentWeather" time="1.511"/>
+  <testcase name="testCurrentWeatherWithLatAndLon" classname="com.wheather.qa.api.TestCurrentWeather" time="1.536"/>
+  <testcase name="testCurrentWeatherWithLatAndLon" classname="com.wheather.qa.api.TestCurrentWeather" time="1.943"/>
+  <testcase name="testCurrentWeatherWithLatAndLon" classname="com.wheather.qa.api.TestCurrentWeather" time="1.474"/>
+  <testcase name="testCurrentWeatherWithPostCode" classname="com.wheather.qa.api.TestCurrentWeather" time="1.646"/>
+  <testcase name="testCurrentWeatherWithPostCode" classname="com.wheather.qa.api.TestCurrentWeather" time="1.702"/>
+  <testcase name="testCurrentWeatherWithPostCode" classname="com.wheather.qa.api.TestCurrentWeather" time="1.521"/>
+  <testcase name="testCurrentWeatherWithPostCode" classname="com.wheather.qa.api.TestCurrentWeather" time="1.741"/>
+  <testcase name="setUp" classname="com.wheather.qa.testcases.HotelsResultPageTest" time="44.564">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d2130ace6e16e6e6f00f2458ce0385f6&#10;*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='select2-drop']//input[@class='select2-input']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CP8B26T', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2130ace6e16e6e6f00f2458ce0385f6
+*** Element info: {Using=xpath, value=//div[@id='select2-drop']//input[@class='select2-input']}
+	at com.wheather.qa.testcases.HotelsResultPageTest.setUp(HotelsResultPageTest.java:29)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 41664
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568981963.789][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 20, 2019 5:49:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568981968.026][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
   </testcase>
+  <testcase name="selectHotelTest" classname="com.wheather.qa.testcases.HotelsResultPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.wheather.qa.testcases.HotelsResultPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.wheather.qa.testcases.HotelDetailsPageTest" time="39.995">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d61e31459c161291b1ffa35b8a0536c9&#10;*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='select2-drop']//input[@class='select2-input']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CP8B26T', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d61e31459c161291b1ffa35b8a0536c9
+*** Element info: {Using=xpath, value=//div[@id='select2-drop']//input[@class='select2-input']}
+	at com.wheather.qa.testcases.HotelDetailsPageTest.setUp(HotelDetailsPageTest.java:35)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 14478
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568982006.036][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 20, 2019 5:50:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568982010.119][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="clickOnBookNow" classname="com.wheather.qa.testcases.HotelDetailsPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.wheather.qa.testcases.HotelDetailsPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.wheather.qa.testcases.LoginPageTest" time="0.012">
+    <failure message="expected [Login] but found [Demo PHPTRAVELS]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Login] but found [Demo PHPTRAVELS]
+	at com.wheather.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:39)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 6319
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568982045.356][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 20, 2019 5:50:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568982049.507][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="homePageTitleTest" classname="com.wheather.qa.testcases.HomePageTest" time="0.025"/>
+  <testcase name="loginButtonTest" classname="com.wheather.qa.testcases.LoginPageTest" time="10.07">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Login&apos;]&quot;}&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: bcf725439495ad45c3c5c4ddb6a05fd2&#10;*** Element info: {Using=xpath, value=//button[text()=&apos;Login&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Login']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CP8B26T', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bcf725439495ad45c3c5c4ddb6a05fd2
+*** Element info: {Using=xpath, value=//button[text()='Login']}
+	at com.wheather.qa.testcases.LoginPageTest.loginButtonTest(LoginPageTest.java:44)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 24458
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568982082.500][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 20, 2019 5:51:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568982086.659][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="clickOnHotelsTest" classname="com.wheather.qa.testcases.HomePageTest" time="5.45"/>
+  <testcase name="enterSearchDetailsTest" classname="com.wheather.qa.testcases.HotelsPageTest" time="15.644">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f84b5008be6080cc0207973dbcf67980&#10;*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='select2-drop']//input[@class='select2-input']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CP8B26T', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f84b5008be6080cc0207973dbcf67980
+*** Element info: {Using=xpath, value=//div[@id='select2-drop']//input[@class='select2-input']}
+	at com.wheather.qa.testcases.HotelsPageTest.enterSearchDetailsTest(HotelsPageTest.java:47)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 40024
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568982135.142][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 20, 2019 5:52:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568982139.286][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="loginTest" classname="com.wheather.qa.testcases.LoginPageTest" time="5.124"/>
 </testsuite>

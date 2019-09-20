@@ -1,20 +1,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
 </head>
 <body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,890</td><td></td><td></td></tr>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">72.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">api.TestCurrentWeather</td><td><a href="#m0">testCurrentWeatherWithLatAndLon</a></td><td rowspan="1">1568868926880</td><td rowspan="1">2824</td></tr><tr class="passedeven"><td><a href="#m1">testCurrentWeatherWithPostCode</a></td><td rowspan="2">1568868929706</td><td rowspan="2">1493</td></tr><tr class="passedeven"><td><a href="#m2">testCurrentWeatherWithPostCode</a></td></tr></tbody>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m1"><b>clickOnBookNow</b>  </a></td><td class="numi">1</td><td>1568980936715</td><td class="numi">5582</td></tr>
 </table>
-<h2>Default test</h2><h3 id="m0">api.TestCurrentWeather#testCurrentWeatherWithLatAndLon</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>28</td><td>78</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.TestCurrentWeather#testCurrentWeatherWithPostCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>SE167BL</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.TestCurrentWeather#testCurrentWeatherWithPostCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>110085</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
-</html>
+<h1>Default test</h1>
+<h2 id="m1">com.wheather.qa.testcases.HotelDetailsPageTest:clickOnBookNow</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;button class=&quot;core-btn-primary room-card__book-now-btn&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1144, 688). Other element would receive the click: &lt;div id=&quot;cookyGotItBtnBox&quot; style=&quot;display: flex; visibility: visible; animation-duration: 0.5s; animation-delay: 5s; animation-name: fadeIn;&quot; data-wow-duration=&quot;0.5s&quot; data-wow-delay=&quot;5s&quot; role=&quot;dialog&quot; class=&quot;wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818  animated&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 681356fedd2c18a6f827b04e52801432</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy10.click(Unknown Source)
+<br/>at com.wheather.qa.pages.HotelDetailsPage.clickOnBookNow(HotelDetailsPage.java:37)
+<br/>at com.wheather.qa.testcases.HotelDetailsPageTest.clickOnBookNow(HotelDetailsPageTest.java:56)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

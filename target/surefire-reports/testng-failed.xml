@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [API Testing]" parallel="tests">
-  <test thread-count="1" verbose="0" name="Thread-1(failed)" parallel="tests">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [API Testing]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Thread-1(failed)" parallel="tests">
     <classes>
-      <class name="api.TestCurrentWeather">
+      <class name="com.wheather.qa.testcases.HotelsResultPageTest">
         <methods>
-          <include name="testCurrentWeatherWithPostCode" invocation-numbers="0 1"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="selectHotelTest"/>
         </methods>
-      </class> <!-- api.TestCurrentWeather -->
+      </class> <!-- com.wheather.qa.testcases.HotelsResultPageTest -->
+      <class name="com.wheather.qa.api.TestCurrentWeather">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="testCurrentWeatherWithInvalidPostalCode"/>
+        </methods>
+      </class> <!-- com.wheather.qa.api.TestCurrentWeather -->
+      <class name="com.wheather.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HomePageTest -->
+      <class name="com.wheather.qa.testcases.HotelsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="enterSearchDetailsTest"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelsPageTest -->
+      <class name="com.wheather.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="loginButtonTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.LoginPageTest -->
+      <class name="com.wheather.qa.testcases.HotelDetailsPageTest">
+        <methods>
+          <include name="clickOnBookNow"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelDetailsPageTest -->
     </classes>
   </test> <!-- Thread-1(failed) -->
 </suite> <!-- Failed suite [API Testing] -->

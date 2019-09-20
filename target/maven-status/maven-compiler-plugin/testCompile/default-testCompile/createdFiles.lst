@@ -1,0 +1,8 @@
+com\wheather\qa\testcases\HomePageTest.class
+com\wheather\qa\testcases\HotelsPageTest.class
+com\wheather\qa\testcases\HotelsResultPageTest.class
+com\wheather\qa\testcases\LoginPageTest.class
+com\wheather\qa\api\TestConstants.class
+com\wheather\qa\testcases\HotelDetailsPageTest.class
+com\wheather\qa\api\TestBase.class
+com\wheather\qa\api\TestCurrentWeather.class
