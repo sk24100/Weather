@@ -16,26 +16,18 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	HotelsPage hotelsPage;
 
-	@BeforeMethod
-	public void setUp() throws InterruptedException {
-		initialization();
-
-		loginPage = new LoginPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
-
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
 
 	@Test(priority=1)
-	public void homePageTitleTest() {
+	public void homePageTitleTest() throws InterruptedException {
+		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertEquals(homePage.validateHomePageTitle(), "Demo PHPTRAVELS");
 	}
 
 	@Test(priority=2)
-	public void clickOnHotelsTest() {
+	public void clickOnHotelsTest() throws InterruptedException {
+		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		hotelsPage = homePage.clickOnHotels();
 		waitForPageReady();
 	}

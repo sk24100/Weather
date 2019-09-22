@@ -31,129 +31,41 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Thread-1</td><td class="numi">12</td><td class="numi">12</td><td class="numi_attn">2</td><td class="numi_attn">4</td><td class="numi">260.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">api-test</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">18.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ui-test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">9</td><td class="numi">9</td><td class="numi_attn">8</td><td class="numi_attn">1</td><td class="numi">18.0 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Thread-1 &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1568981958445</td><td class="numi">0</td></tr>
-<tr class="failedeven"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td>1568982001268</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Thread-1 &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.wheather.qa.api.TestCurrentWeather</td><td><a href="#m3"><b>testCurrentWeatherWithInvalidPostalCode</b>  </a></td><td class="numi">1</td><td>1568981943456</td><td class="numi">1714</td></tr>
-<tr class="failedeven"><td rowspan="2">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m4"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1568982055544</td><td class="numi">12</td></tr><tr class="failedeven"><td><a href="#m5"><b>loginButtonTest</b>  </a></td><td class="numi">1</td><td>1568982093052</td><td class="numi">10067</td></tr>
-<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsPageTest</td><td><a href="#m6"><b>enterSearchDetailsTest</b>  </a></td><td class="numi">1</td><td>1568982158430</td><td class="numi">15643</td></tr>
-<tr><th colspan="4">Thread-1 &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m7"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1568982041263</td><td class="numi">0</td></tr>
-<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m8"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1568982001267</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Thread-1 &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m9"><b>selectHotelTest</b>  </a></td><td class="numi">1</td><td>1568982001267</td><td class="numi">0</td></tr>
-<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m10"><b>clickOnBookNow</b>  </a></td><td class="numi">1</td><td>1568982041261</td><td class="numi">2</td></tr>
-<tr><th colspan="4">Thread-1 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="9">com.wheather.qa.api.TestCurrentWeather</td><td><a href="#m11"><b>testCurrentWeatherWithInvalidKey</b>  </a></td><td class="numi">1</td><td>1568981937896</td><td class="numi">5558</td></tr><tr class="passedodd"><td><a href="#m12"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1568981945364</td><td class="numi">6468</td></tr><tr class="passedodd"><td><a href="#m13"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1568981945364</td><td class="numi">6468</td></tr><tr class="passedodd"><td><a href="#m14"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1568981945364</td><td class="numi">6468</td></tr><tr class="passedodd"><td><a href="#m15"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1568981945364</td><td class="numi">6468</td></tr><tr class="passedodd"><td><a href="#m16"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1568981951834</td><td class="numi">6611</td></tr><tr class="passedodd"><td><a href="#m17"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1568981951834</td><td class="numi">6611</td></tr><tr class="passedodd"><td><a href="#m18"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1568981951834</td><td class="numi">6611</td></tr><tr class="passedodd"><td><a href="#m19"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1568981951834</td><td class="numi">6611</td></tr>
-<tr class="passedeven"><td rowspan="2">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m20"><b>homePageTitleTest</b>  </a></td><td class="numi">1</td><td>1568982077697</td><td class="numi">24</td></tr><tr class="passedeven"><td><a href="#m21"><b>clickOnHotelsTest</b>  </a></td><td class="numi">1</td><td>1568982124857</td><td class="numi">5450</td></tr>
-<tr class="passedodd"><td rowspan="1">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m22"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1568982192403</td><td class="numi">5124</td></tr>
+<tr><th colspan="4">api-test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.wheather.qa.api.TestCurrentWeather</td><td><a href="#m1"><b>testCurrentWeatherWithInvalidPostalCode</b>  </a></td><td class="numi">1</td><td>1569134685064</td><td class="numi">1774</td></tr>
+<tr><th colspan="4">api-test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="9">com.wheather.qa.api.TestCurrentWeather</td><td><a href="#m2"><b>testCurrentWeatherWithInvalidKey</b>  </a></td><td class="numi">1</td><td>1569134682510</td><td class="numi">2554</td></tr><tr class="passedodd"><td><a href="#m3"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1569134686844</td><td class="numi">6738</td></tr><tr class="passedodd"><td><a href="#m4"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1569134686844</td><td class="numi">6738</td></tr><tr class="passedodd"><td><a href="#m5"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1569134686844</td><td class="numi">6738</td></tr><tr class="passedodd"><td><a href="#m6"><b>testCurrentWeatherWithLatAndLon</b>  </a></td><td class="numi">4</td><td>1569134686844</td><td class="numi">6738</td></tr><tr class="passedodd"><td><a href="#m7"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1569134693582</td><td class="numi">6887</td></tr><tr class="passedodd"><td><a href="#m8"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1569134693582</td><td class="numi">6887</td></tr><tr class="passedodd"><td><a href="#m9"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1569134693582</td><td class="numi">6887</td></tr><tr class="passedodd"><td><a href="#m10"><b>testCurrentWeatherWithPostCode</b>  </a></td><td class="numi">4</td><td>1569134693582</td><td class="numi">6887</td></tr>
+<tr><th colspan="4">ui-test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m11"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700488</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m12"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700489</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m13"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700490</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m14"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700490</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsPageTest</td><td><a href="#m15"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700492</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ui-test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m16"><b>setUp</b>  </a></td><td class="numi">2</td><td>1569134700491</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m17"><b>setUp</b>  </a></td><td class="numi">1</td><td>1569134700491</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m18"><b>tearDown</b>  </a></td><td class="numi">3</td><td>1569134700490</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HotelsPageTest</td><td><a href="#m19"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1569134700492</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m20"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1569134700489</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m21"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1569134700489</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m22"><b>tearDown</b>  </a></td><td class="numi">2</td><td>1569134700491</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ui-test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HotelDetailsPageTest</td><td><a href="#m23"><b>clickOnBookNow</b>  </a></td><td class="numi">1</td><td>1569134700489</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m24"><b>clickOnHotelsTest</b>  </a></td><td class="numi">1</td><td>1569134700491</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.wheather.qa.testcases.HotelsPageTest</td><td><a href="#m25"><b>enterSearchDetailsTest</b>  </a></td><td class="numi">1</td><td>1569134700492</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HomePageTest</td><td><a href="#m26"><b>homePageTitleTest</b>  </a></td><td class="numi">1</td><td>1569134700491</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="3">com.wheather.qa.testcases.LoginPageTest</td><td><a href="#m27"><b>loginButtonTest</b>  </a></td><td class="numi">1</td><td>1569134700491</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m28"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1569134700490</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m29"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1569134700492</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.wheather.qa.testcases.HotelsResultPageTest</td><td><a href="#m30"><b>selectHotelTest</b>  </a></td><td class="numi">1</td><td>1569134700489</td><td class="numi">0</td></tr>
 </table>
-<h1>Thread-1</h1>
-<h2 id="m1">com.wheather.qa.testcases.HotelDetailsPageTest:setUp</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d61e31459c161291b1ffa35b8a0536c9
-*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-<br/>at com.wheather.qa.pages.HotelsPage.enterDataForSearchingHotel(HotelsPage.java:45)
-<br/>at com.wheather.qa.testcases.HotelDetailsPageTest.setUp(HotelDetailsPageTest.java:35)
-<br/>23 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.wheather.qa.testcases.HotelsResultPageTest:setUp</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d2130ace6e16e6e6f00f2458ce0385f6
-*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-<br/>at com.wheather.qa.pages.HotelsPage.enterDataForSearchingHotel(HotelsPage.java:45)
-<br/>at com.wheather.qa.testcases.HotelsResultPageTest.setUp(HotelsResultPageTest.java:29)
-<br/>23 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.wheather.qa.testcases.LoginPageTest:loginButtonTest</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Login&apos;]&quot;}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bcf725439495ad45c3c5c4ddb6a05fd2
-*** Element info: {Using=xpath, value=//button[text()=&apos;Login&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-<br/>at com.wheather.qa.pages.LoginPage.validateLoginBtnHome(LoginPage.java:39)
-<br/>at com.wheather.qa.testcases.LoginPageTest.loginButtonTest(LoginPageTest.java:44)
-<br/>21 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithInvalidPostalCode</h2>
+<h1>api-test</h1>
+<h2 id="m1">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithInvalidPostalCode</h2>
 <div style="padding-left:3em">
 <p>1 expectation failed.
 Expected status code &lt;400&gt; doesn&apos;t match actual status code &lt;200&gt;.
@@ -186,82 +98,7 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>21 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.wheather.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
-<div style="padding-left:3em">
-<p>expected [Login] but found [Demo PHPTRAVELS]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:176)
-<br/>at org.testng.Assert.assertEquals(Assert.java:186)
-<br/>at com.wheather.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:39)
-<br/>21 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.wheather.qa.testcases.HotelsPageTest:enterSearchDetailsTest</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]&quot;}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-CP8B26T&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\ritik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f84b5008be6080cc0207973dbcf67980
-*** Element info: {Using=xpath, value=//div[@id=&apos;select2-drop&apos;]//input[@class=&apos;select2-input&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-<br/>at com.wheather.qa.pages.HotelsPage.enterDataForSearchingHotel(HotelsPage.java:45)
-<br/>at com.wheather.qa.testcases.HotelsPageTest.enterSearchDetailsTest(HotelsPageTest.java:47)
-<br/>21 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.wheather.qa.testcases.HotelDetailsPageTest:tearDown</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">com.wheather.qa.testcases.HotelsResultPageTest:tearDown</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.wheather.qa.testcases.HotelsResultPageTest:selectHotelTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">com.wheather.qa.testcases.HotelDetailsPageTest:clickOnBookNow</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>SE167BL</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>28</td>
-<td>78</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>60173</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
+<h2 id="m2">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>30</td>
@@ -269,14 +106,14 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
+<h2 id="m3">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>110085</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
+<h2 id="m4">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>-30</td>
@@ -284,18 +121,38 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
+<h2 id="m5">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>60173</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>SE167BL</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>28</td>
+<td>78</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithPostCode</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>2145</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">com.wheather.qa.testcases.LoginPageTest:loginTest</h2>
+<h2 id="m9">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithInvalidKey</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithInvalidKey</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
+<h2 id="m10">com.wheather.qa.api.TestCurrentWeather:testCurrentWeatherWithLatAndLon</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>33</td>
@@ -303,8 +160,83 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">com.wheather.qa.testcases.HomePageTest:clickOnHotelsTest</h2>
+<h1>ui-test</h1>
+<h2 id="m11">com.wheather.qa.testcases.HotelDetailsPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.wheather.qa.base.TestBase.initialization(TestBase.java:41)
+<br/>at com.wheather.qa.testcases.HotelDetailsPageTest.setUp(HotelDetailsPageTest.java:30)
+<br/>23 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">com.wheather.qa.testcases.HomePageTest:homePageTitleTest</h2>
+<h2 id="m12">com.wheather.qa.testcases.LoginPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.wheather.qa.base.TestBase.initialization(TestBase.java:41)
+<br/>at com.wheather.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:23)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.wheather.qa.testcases.HotelsResultPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.wheather.qa.base.TestBase.initialization(TestBase.java:41)
+<br/>at com.wheather.qa.testcases.HotelsResultPageTest.setUp(HotelsResultPageTest.java:24)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.wheather.qa.testcases.HomePageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.wheather.qa.base.TestBase.initialization(TestBase.java:41)
+<br/>at com.wheather.qa.testcases.HomePageTest.setUp(HomePageTest.java:21)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.wheather.qa.testcases.HotelsPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.wheather.qa.base.TestBase.initialization(TestBase.java:41)
+<br/>at com.wheather.qa.testcases.HotelsPageTest.setUp(HotelsPageTest.java:23)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.wheather.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.wheather.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.wheather.qa.testcases.HotelsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.wheather.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.wheather.qa.testcases.HotelDetailsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.wheather.qa.testcases.HotelsResultPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.wheather.qa.testcases.HomePageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.wheather.qa.testcases.HomePageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.wheather.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.wheather.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.wheather.qa.testcases.HomePageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.wheather.qa.testcases.LoginPageTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.wheather.qa.testcases.HotelDetailsPageTest:clickOnBookNow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.wheather.qa.testcases.HotelsResultPageTest:selectHotelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.wheather.qa.testcases.HomePageTest:clickOnHotelsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.wheather.qa.testcases.HotelsPageTest:enterSearchDetailsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.wheather.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.wheather.qa.testcases.LoginPageTest:loginButtonTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.wheather.qa.testcases.HomePageTest:homePageTitleTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

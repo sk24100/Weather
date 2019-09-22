@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TestCurrentWeather extends TestBase {
+public class TestCurrentWeather extends APITestBase {
 
 	/*
 	 * Ac1 : I want to get Current Weather Data for multiple places in the world

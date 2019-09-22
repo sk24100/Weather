@@ -19,23 +19,13 @@ public class HotelsResultPageTest extends TestBase{
 	HotelsResultPage hotelResultPage;
 	HotelDetailsPage hotelDetailsPage;
 
-	@BeforeMethod
-	public void setUp() throws InterruptedException {
-		initialization();
-
+	
+	@Test
+	public void selectHotelTest() throws InterruptedException {
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		hotelsPage=homePage.clickOnHotels();
 		hotelResultPage=hotelsPage.enterDataForSearchingHotel(prop.getProperty("hotelcity"), prop.getProperty("checkin"),  prop.getProperty("checkout"));
-	}
-
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
-	
-	@Test
-	public void selectHotelTest() throws InterruptedException {
 		hotelDetailsPage=hotelResultPage.selectHotel();
 		
 	}

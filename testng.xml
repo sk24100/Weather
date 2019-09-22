@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="API Testing" parallel="tests"	thread-count="1">
+<suite name="API Testing" parallel="classes" thread-count="1">
 
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReportListener" />
 	</listeners>
 	
-	<test name="Thread-1">
+	<test name="api-test">
 		<classes>
-			<class name="com.wheather.qa.api.TestCurrentWeather"></class>  
+			<class name="com.wheather.qa.api.TestCurrentWeather"></class>  			
+		</classes>
+	</test>
+	
+	<test name="ui-test">
+		<classes>
 			<class name="com.wheather.qa.testcases.LoginPageTest"></class>
 			<class name="com.wheather.qa.testcases.HomePageTest"></class>
 			<class name="com.wheather.qa.testcases.HotelsPageTest"></class> 
 			<class name="com.wheather.qa.testcases.HotelsResultPageTest"></class>
 			<class name="com.wheather.qa.testcases.HotelDetailsPageTest"></class>
-			
 		</classes>
 	</test>
 

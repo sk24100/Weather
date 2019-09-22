@@ -3,7 +3,7 @@ package com.wheather.qa.api;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-public class TestBase {
+public class APITestBase {
 
 	@BeforeSuite
 	public void beforeSuite() {

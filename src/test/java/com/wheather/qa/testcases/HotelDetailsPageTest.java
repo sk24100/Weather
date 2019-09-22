@@ -24,35 +24,34 @@ public class HotelDetailsPageTest extends TestBase{
 	HotelsResultPage hotelResultPage;
 	HotelDetailsPage hotelDetailsPage;
 	BookingPage bookingPage;
-
-	@BeforeMethod
-	public void setUp() throws InterruptedException {
-		initialization();
-
+	
+	//@Test
+	public void getHotelDetailsTest() throws Exception {
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		hotelsPage=homePage.clickOnHotels();
 		hotelResultPage=hotelsPage.enterDataForSearchingHotel(prop.getProperty("hotelcity"), prop.getProperty("checkin"),  prop.getProperty("checkout"));
 		hotelDetailsPage=hotelResultPage.selectHotel();
-	}
-
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
-	
-	//@Test
-	public void getHotelDetailsTest() {
 		Assert.assertTrue(hotelDetailsPage.validateHotelDetails());
 	}
 	
 	//@Test
-	public void validateBookNowButtonTest() {
+	public void validateBookNowButtonTest() throws Exception  {
+		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		hotelsPage=homePage.clickOnHotels();
+		hotelResultPage=hotelsPage.enterDataForSearchingHotel(prop.getProperty("hotelcity"), prop.getProperty("checkin"),  prop.getProperty("checkout"));
+		hotelDetailsPage=hotelResultPage.selectHotel();
 		Assert.assertTrue(hotelDetailsPage.validateBookNowBtn());
 	}
 	
 	@Test
-	public void clickOnBookNow() throws InterruptedException {
+	public void clickOnBookNow() throws Exception  {
+		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		hotelsPage=homePage.clickOnHotels();
+		hotelResultPage=hotelsPage.enterDataForSearchingHotel(prop.getProperty("hotelcity"), prop.getProperty("checkin"),  prop.getProperty("checkout"));
+		hotelDetailsPage=hotelResultPage.selectHotel();
 		bookingPage=hotelDetailsPage.clickOnBookNow();
 	}
 

@@ -4,14 +4,8 @@
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
   </listeners>
-  <test name="Thread-1(failed)" parallel="tests">
+  <test name="api-test(failed)" parallel="tests">
     <classes>
-      <class name="com.wheather.qa.testcases.HotelsResultPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="selectHotelTest"/>
-        </methods>
-      </class> <!-- com.wheather.qa.testcases.HotelsResultPageTest -->
       <class name="com.wheather.qa.api.TestCurrentWeather">
         <methods>
           <include name="beforeSuite"/>
@@ -21,14 +15,49 @@
       </class> <!-- com.wheather.qa.api.TestCurrentWeather -->
       <class name="com.wheather.qa.testcases.HomePageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.wheather.qa.testcases.HomePageTest -->
       <class name="com.wheather.qa.testcases.HotelsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelsPageTest -->
+      <class name="com.wheather.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.LoginPageTest -->
+      <class name="com.wheather.qa.testcases.HotelsResultPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelsResultPageTest -->
+      <class name="com.wheather.qa.testcases.HotelDetailsPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelDetailsPageTest -->
+    </classes>
+  </test> <!-- api-test(failed) -->
+  <test name="ui-test(failed)" parallel="tests">
+    <classes>
+      <class name="com.wheather.qa.api.TestCurrentWeather">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.wheather.qa.api.TestCurrentWeather -->
+      <class name="com.wheather.qa.testcases.HomePageTest">
+        <methods>
+          <include name="homePageTitleTest"/>
+          <include name="clickOnHotelsTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HomePageTest -->
+      <class name="com.wheather.qa.testcases.HotelsPageTest">
+        <methods>
+          <include name="setUp"/>
           <include name="enterSearchDetailsTest"/>
         </methods>
       </class> <!-- com.wheather.qa.testcases.HotelsPageTest -->
@@ -37,9 +66,15 @@
           <include name="loginPageTitleTest"/>
           <include name="loginButtonTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.wheather.qa.testcases.LoginPageTest -->
+      <class name="com.wheather.qa.testcases.HotelsResultPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectHotelTest"/>
+        </methods>
+      </class> <!-- com.wheather.qa.testcases.HotelsResultPageTest -->
       <class name="com.wheather.qa.testcases.HotelDetailsPageTest">
         <methods>
           <include name="clickOnBookNow"/>
@@ -47,5 +82,5 @@
         </methods>
       </class> <!-- com.wheather.qa.testcases.HotelDetailsPageTest -->
     </classes>
-  </test> <!-- Thread-1(failed) -->
+  </test> <!-- ui-test(failed) -->
 </suite> <!-- Failed suite [API Testing] -->

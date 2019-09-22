@@ -14,26 +14,11 @@ public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	public LoginPageTest() {
-		super(); //
-	}
-	
-	@BeforeMethod
-	public void setUp() {
-		initialization();
-		//loginPage object you have to create
-		
-		loginPage=new LoginPage();
-		
-	}
-	
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
+
 	
 	@Test(priority=1)
 	public void loginPageTitleTest() {
+		loginPage=new LoginPage();
 		String title=loginPage.validateLoginPageTitle();
 		
 		Assert.assertEquals(title, "Login");
@@ -41,12 +26,14 @@ public class LoginPageTest extends TestBase{
 	
 	@Test (priority=2)
 	public void loginButtonTest() {
+		loginPage=new LoginPage();
 		boolean flag= loginPage.validateLoginBtnHome();
 		Assert.assertTrue(flag);
 	}
 	
 	@Test(priority=3)
 	public void loginTest() throws InterruptedException {
+		loginPage=new LoginPage();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 }

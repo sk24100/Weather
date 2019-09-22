@@ -10,10 +10,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.wheather.qa.util.TestUtil;
+
+import shared.Constants;
 
 public class TestBase {
 	
@@ -23,37 +27,47 @@ public class TestBase {
 	
 	public TestBase()  {
 		
+
+		
+	}
+	
+	@BeforeMethod
+	public static void initialization() {
 		try {
 			prop=new Properties();
-			FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\wheather\\qa\\config\\config.properties");
+			FileInputStream ip=new FileInputStream(Constants.CONFIG_PATH);
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
+			prop =null;
 		}catch(IOException e) {
 			e.printStackTrace();
+			prop = null;
 		}
+		if(prop == null) return;
 		
-	}
-	
-	public static void initialization() {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver.exe");
+			if (System.getProperty("os.name").toLowerCase().contains("win")) {
+			System.setProperty("webdriver.chrome.driver", Constants.DRIVERS_PATH + "/chromedriver.exe");}
 			driver=new ChromeDriver();
 		}
 		else if (browserName.equals("Firefox")) {
-			System.setProperty("webdriver.gecko.driver",  System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\geckodriver.exe");
+			if (System.getProperty("os.name").toLowerCase().contains("win")) {
+			System.setProperty("webdriver.gecko.driver",  Constants.DRIVERS_PATH + "/geckodriver.exe");}
+			driver=new FirefoxDriver();
 		}
-		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 	}
 	
-
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
 	public void waitForPageReady() {
 		try {
 			String sPageInteractiveStatus = "";

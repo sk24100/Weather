@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.wheather.qa.testcases.HotelDetailsPageTest">
+      <class name="com.wheather.qa.testcases.LoginPageTest">
         <methods>
-          <include name="clickOnBookNow"/>
-          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginButtonTest"/>
           <include name="tearDown"/>
+          <include name="initialization"/>
         </methods>
-      </class> <!-- com.wheather.qa.testcases.HotelDetailsPageTest -->
+      </class> <!-- com.wheather.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
