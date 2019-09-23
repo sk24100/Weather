@@ -3,7 +3,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Execution of Project](#execution)
-* [Defects in Wheather API](#defects)
+* [Defects in Weather API](#defects)
 * [Defects in PHPTravels](#defects)
  
 
@@ -41,7 +41,7 @@ After you done with it you have to do **mvn clean test**
   1) _api-test_
   2) _ui-smoke-test_
 
-## Defects in Wheather API
+## Defects in Weather API
 
   1) API is still returing data on passing negative value of Postal code in Request Params.
   
