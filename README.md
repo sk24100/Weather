@@ -8,7 +8,7 @@
  
 
 ## General info
- * This project is about testing the wheather API using Rest Assured.
+ * This project is about testing the weather API using Rest Assured.
  * Creating automation framework for UI based testing on PHPTravels.net in JAVA.
 	
 ## Technologies
