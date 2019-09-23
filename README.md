@@ -22,7 +22,7 @@ Project is created with:
 
 * **Clone repository:**
 
-        git clone https://github.com/sk24100/Wheather/tree/Saurabh-QloyalCodeTest
+        git clone https://github.com/sk24100/Weather/tree/Saurabh-QloyalCodeTest
  
 * **Prerequisites:**
     * Install the latest version of [Java](https://java.com) (1.8) and [Maven](https://maven.apache.org/download.html).
